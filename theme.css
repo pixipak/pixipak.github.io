@@ -12,10 +12,13 @@ canvas {
 	width: 100%;
 	position: absolute;
 	z-index: 1;
-	background: -webkit-linear-gradient(#fccffc, #EAB9B4); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(#fccffc, #EAB9B4); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(#fccffc, #EAB9B4); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(#fccffc, #EAB9B4); /* Standard syntax */
+	/*background: -webkit-linear-gradient(#fccffc, #EAB9B4);
+  	background: -o-linear-gradient(#fccffc, #EAB9B4);
+  	background: -moz-linear-gradient(#fccffc, #EAB9B4);
+  	background: linear-gradient(#fccffc, #EAB9B4);*/
+  	background-image: url('flowers.jpg');
+  	background-size: cover;
+
 }
 
 .wrapper {
@@ -34,15 +37,50 @@ canvas {
 }
 
 #name {
-	font-family:'Abril Fatface', cursive;
+	font-family:'Open Sans', serif;
 	letter-spacing: 3px;
 	font-size: 50px;
 	margin-bottom: 0;
+	text-transform: uppercase;
 }
 
 #bio {
-	font-family: 'Open Sans', sans-serif;
+	font-family:'Josefin Slab', serif;
 	font-weight: 500;
 	font-size: 25px;
 	margin-bottom: 0;
+	margin-top: -5px;
+}
+
+#info {
+	position: fixed;
+	top: 25%;
+	left: 10%;
+	padding-left: 0;
+	text-align: center;
+	list-style-type: none;
+	width: 100px;
+}
+
+li {
+	width: 100%;
+	display: block;
+	font-family:'Josefin Slab', serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	height: 4em;
+	line-height: 4em;
+	border: 2px solid #fff;
+	padding: 5px;
+	background: transparent;
+	color: black;
+}
+
+li:hover {
+	background: transparent;
+	color: #fccffc;
+}
+
+.mid-li {
+	border-top: none;
 }
