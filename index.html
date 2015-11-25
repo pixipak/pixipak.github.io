@@ -11,25 +11,52 @@
 <script src="EasePack.min.js"></script>
 <script src="rAF.js"></script>
 <script src="TweenLite.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <title>Personal Site</title>
 </head>
 
 <body>
 <div id="main-container">
 	<canvas id="lines"></canvas>
-	<ul id="info">
-		<li>Linkedin</li><!--
-		--><li class="mid-li">Resume</li><!--
-		--><li class="mid-li">Contact</li>
-	</ul>
 	<div id="center-frame" class="wrapper">
 		<h1 id="name">Michelle Yin</h1>
 		<p id="bio">Student. Developer. Entrepreneur. </p>
+		<ul id="info">
+			<li>
+				<a href="https://www.linkedin.com/in/michelle-yin-17b13155">
+					<img src="svg/linkedin2.svg" alt="linkedin" style="margin-right: 5px;">Linkedin
+				</a>
+			</li><!--
+			--><li class="mid-li">
+					<a href="resume.pdf">
+						<img src="svg/quill.svg" class="icon" alt="resume" style="margin-right: 5px;">Resume
+					</a>
+				</li><!--
+			--><li class="mid-li">
+					<a href="mailto:yinm@usc.edu?Subject=Hello%20There" target="_top">
+						<img src="svg/mail.svg" class="icon" alt="mail" style="margin-right: 5px;">Contact
+					</a>
+				</li>
+		</ul>
 	</div>
 </div>
 </body>
 
 </html>
 <script src="movingbackground.js"></script>
+<script>
+
+$(document).ready(function () {
+    $("ul#info li")
+        .mouseover(function() {
+            var src = $(this).children('a').find('img').attr("src").replace(/.svg/, "_hover.svg");
+            $(this).children('a').find('img').attr("src", src);
+        })
+        .mouseout(function() {
+            var src = $(this).children('a').find('img').attr("src").replace(/_hover.svg/, ".svg");
+            $(this).children('a').find('img').attr("src", src);
+        });
+});
+</script>
 
 
