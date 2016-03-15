@@ -11,33 +11,82 @@
 <script src="EasePack.min.js"></script>
 <script src="rAF.js"></script>
 <script src="TweenLite.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <title>Personal Site</title>
 </head>
 
 <body>
+<div class="loader">
+<svg viewBox="0 0 600 300">
+
+  <!-- Gradient -->
+  <radialGradient id="gr-radial"
+                  cx="50%" cy="50%" r="70%"
+                  >
+    <!-- Animation for radius of gradient -->
+    <animate attributeName="r" 
+             values="100%;0%;50%;100%"
+             dur="5s" repeatCount="indefinite" />
+    <!-- Animation for colors of stop-color -->
+    <stop stop-color="#FFF" offset="0">
+      <animate attributeName="stop-color" 
+               values="#FFF;#FFF;#FFF;#FFF"
+               dur="5s" repeatCount="indefinite" />
+    </stop>
+    <stop stop-color="#0B0B7C" offset="100%"/>
+  </radialGradient>
+
+  <!-- Text -->
+  <text text-anchor="middle"
+        x="50%"
+        y="50%"
+        dy=".35em"
+        class="text"
+        >
+    Text
+  </text>
+</svg>
+</div>
 <div id="main-container">
 	<canvas id="lines"></canvas>
 	<div id="center-frame" class="wrapper">
 		<h1 id="name">Michelle Yin</h1>
-		<p id="bio">Student. Developer. Entrepreneur. </p>
-		<ul id="info">
-			<li>
-				<a href="https://www.linkedin.com/in/michelle-yin-17b13155">
-					<img src="SVG/linkedin2.svg" alt="linkedin" style="margin-right: 5px;">Linkedin
-				</a>
-			</li><!--
-			--><li class="mid-li">
-					<a href="RESUME_2016.pdf">
-						<img src="SVG/quill.svg" class="icon" alt="resume" style="margin-right: 5px;">Resume
-					</a>
-				</li><!--
-			--><li class="mid-li">
-					<a href="mailto:yinm@usc.edu?Subject=Hello%20There" target="_top">
-						<img src="SVG/mail.svg" class="icon" alt="mail" style="margin-right: 5px;">Contact
-					</a>
-				</li>
-		</ul>
+		<p id="bio">Project Manager // Developer</p>
+	</div>
+
+	<a href="#" id="scrolldown"><img src="SVG/down.png" id="downarrow"></a>
+
+	<div id="profile-container" class="container-fluid">
+		<div class="section-title">
+			<h1>Profile</h1>
+		</div>
+		<hr>
+		<div id="profile-content" class="row">
+		    <div class="col-sm-4 text-container">
+		    	<h2>Bio</h2>
+		    	<p class="profile-desc">I'm a 20 year old developer from Palo Alto, California. I've had a passion for technology and its limitless applications since I started coding in high school. The many ways it changes peoples lives inspire me to keep learning everyday. I have a passion for building and designing web apps but I love picking up new skills as well. I love teamwork and seeing the impressive things people can accomplish when working together and am currently a project manager for <a href="http://www.ctc-usc.org/" id="ctc-link">Code the Change.</a></p>
+		    </div>
+		    <div class="col-sm-4 text-center prof-image--container">
+		    	<img src="profile.jpg" id="profile-image">
+		    </div>
+		    <div class="col-sm-4 text-container">
+		    	<h2>About Me</h2>
+		    	<h4>Name:</h4>
+		    	<small>Michelle Yin</small>
+		    	<h4>Education:</h4>
+		    	<small>University of Southern California</small> </br>
+		    	<small>B.S. Computer Science and Business Administration</small>
+		    	<h4>Location:</h4>
+		    	<small>Los Angeles, CA</small>
+		    </div>
+		</div>
 	</div>
 </div>
 </body>
@@ -45,7 +94,9 @@
 </html>
 <script src="movingbackground.js"></script>
 <script>
-
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
 $(document).ready(function () {
     $("ul#info li")
         .mouseover(function() {
@@ -56,6 +107,12 @@ $(document).ready(function () {
             var src = $(this).children('a').find('img').attr("src").replace(/_hover.svg/, ".svg");
             $(this).children('a').find('img').attr("src", src);
         });
+});
+
+$("#scrolldown").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#profile-container").offset().top},
+        'slow');
 });
 </script>
 
