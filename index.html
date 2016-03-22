@@ -23,37 +23,6 @@
 </head>
 
 <body>
-<div class="loader">
-<svg viewBox="0 0 600 300">
-
-  <!-- Gradient -->
-  <radialGradient id="gr-radial"
-                  cx="50%" cy="50%" r="70%"
-                  >
-    <!-- Animation for radius of gradient -->
-    <animate attributeName="r" 
-             values="100%;0%;50%;100%"
-             dur="5s" repeatCount="indefinite" />
-    <!-- Animation for colors of stop-color -->
-    <stop stop-color="#FFF" offset="0">
-      <animate attributeName="stop-color" 
-               values="#FFF;#FFF;#FFF;#FFF"
-               dur="5s" repeatCount="indefinite" />
-    </stop>
-    <stop stop-color="#0B0B7C" offset="100%"/>
-  </radialGradient>
-
-  <!-- Text -->
-  <text text-anchor="middle"
-        x="50%"
-        y="50%"
-        dy=".35em"
-        class="text"
-        >
-    Text
-  </text>
-</svg>
-</div>
 <div id="main-container">
 	<canvas id="lines"></canvas>
 	<div id="center-frame" class="wrapper">
@@ -94,9 +63,7 @@
 </html>
 <script src="movingbackground.js"></script>
 <script>
-$(window).load(function() {
-	$(".loader").fadeOut("slow");
-})
+
 $(document).ready(function () {
     $("ul#info li")
         .mouseover(function() {
