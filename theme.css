@@ -80,7 +80,7 @@ hr {
 #bio {
   font-family: 'Josefin Slab', serif;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 35px;
   margin-bottom: 0;
   margin-top: -5px; }
 
@@ -146,10 +146,11 @@ li:hover a {
   .section-title h1 {
     text-align: center;
     font-size: 4em;
-    color: #610036; }
+    color: #5e0231; }
 
 #profile-container {
-  padding: 40px 100px; }
+  padding: 40px 100px;
+  background: #c7a693; }
 
 #profile-content {
   font-family: 'Open-sans', sans-serif;
@@ -162,9 +163,7 @@ li:hover a {
     margin-bottom: 30px; }
 
 #profile-image {
-  width: 100%;
-  position: relative;
-  top: 20px; }
+  width: 100%; }
 
 .profile-desc {
   color: black; }
@@ -179,13 +178,21 @@ li:hover a {
     font-size: 16px;
     margin-bottom: 15px; }
 
+.text-container--left {
+  padding-right: 60px !important; }
+
+.text-container--right {
+  padding-left: 60px !important; }
+
 .prof-image--container {
   padding: 15px;
-  top: 30px; }
+  top: 60px !important;
+  background: #dbc3d0;
+  position: relative !important; }
 
 #ctc-link {
-  color: magenta; }
+  color: #5e0231; }
   #ctc-link:hover {
-    color: #610036; }
+    color: #dbc3d0; }
 
 /*# sourceMappingURL=theme.css.map */

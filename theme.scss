@@ -170,12 +170,13 @@ li:hover a {
 	h1 {
 		text-align: center;
 		font-size: 4em;
-		color: #610036;
+		color: #5e0231;
 	}
 }
 
 #profile-container {
 	padding: 40px 100px;
+	background: #c7a693;
 }
 
 #profile-content {
@@ -194,8 +195,6 @@ li:hover a {
 
 #profile-image {
 	width: 100%;
-	position: relative;
-	top: 20px;
 }
 
 .profile-desc {
@@ -217,14 +216,24 @@ li:hover a {
 	}
 }
 
-.prof-image--container {
+.text-container--left {
+	padding-right: 60px !important;
+}
+
+.text-container--right {
+	padding-left: 60px !important;
+}
+
+.prof-image--container{
 	padding: 15px;
-	top: 30px;
+	top: 60px !important;
+	background: #dbc3d0;
+	position: relative !important;
 }
 
 #ctc-link {
-	color: magenta;
+	color: #5e0231;
 	&:hover {
-		color: #610036;
+		color: #dbc3d0;
 	}
 }
