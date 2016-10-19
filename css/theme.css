@@ -1,0 +1,156 @@
+@keyframes grow {
+  0% {
+    max-width: 90%; }
+  100% {
+    max-width: 94%; } }
+@-webkit-keyframes grow {
+  0% {
+    max-width: 90%; }
+  100% {
+    max-width: 94%; } }
+.main-container {
+  margin-bottom: 0 !important;
+  height: 100vh; }
+
+#left-container {
+  height: 80vh;
+  background: -webkit-linear-gradient(left top, #5634F6, #9869E7, #FECAD2);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #5634F6, #9869E7, #FECAD2);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #5634F6, #9869E7, #FECAD2);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #5634F6, #9869E7, #FECAD2);
+  /* Standard syntax */ }
+  @media only screen and (min-width: 601px) {
+    #left-container {
+      position: fixed;
+      float: left;
+      display: inline-block;
+      height: 100vh; } }
+  #left-container .inner-text {
+    height: 100%;
+    text-align: center; }
+  #left-container .text-wrapper {
+    margin: 0 auto; }
+  #left-container #picture {
+    width: 170px;
+    margin-bottom: 40px; }
+  #left-container span {
+    color: #4C34F7; }
+  #left-container p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    line-height: 15px; }
+  #left-container .left-button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 8px 20px;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white; }
+    #left-container .left-button span {
+      color: #5634F6; }
+    #left-container .left-button:hover {
+      text-decoration: none;
+      background: transparent; }
+      #left-container .left-button:hover span {
+        color: white; }
+  #left-container .social-media {
+    font-size: 18px;
+    margin-top: 20px; }
+    #left-container .social-media a {
+      margin-right: 5px;
+      color: #5634F6; }
+      #left-container .social-media a:hover, #left-container .social-media a:focus {
+        text-decoration: none; }
+        #left-container .social-media a:hover span, #left-container .social-media a:focus span {
+          color: white; }
+
+#right-container {
+  float: right; }
+  #right-container span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    color: #5634F6; }
+  #right-container .title, #right-container .desc {
+    height: 100%;
+    margin-top: 50px; }
+  #right-container .title {
+    padding-left: 50px; }
+  #right-container .desc {
+    padding-right: 50px; }
+    @media only screen and (max-width: 990px) {
+      #right-container .desc {
+        padding-left: 50px; } }
+  #right-container p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em; }
+  #right-container .project-container {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 275px; }
+    #right-container .project-container .text-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      padding: 100px 50px;
+      display: none;
+      border-radius: 10px; }
+      #right-container .project-container .text-container p {
+        font-family: "Montserrat", sans-serif;
+        color: white; }
+  #right-container #lax {
+    background-image: url(../laxsite.png); }
+    #right-container #lax .text-container {
+      background: -webkit-linear-gradient(left top, #4958D7, #a4abeb);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(bottom right, #5634F6, #a4abeb);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(bottom right, #5634F6, #a4abeb);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to bottom right, #5634F6, #a4abeb);
+      /* Standard syntax */ }
+  #right-container #woke {
+    background-image: url(../woke.png);
+    background-position: center; }
+    #right-container #woke .text-container {
+      background: -webkit-linear-gradient(left top, #8a8a8a, #cfcfcf);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(bottom right, #8a8a8a, #cfcfcf);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(bottom right, #8a8a8a, #cfcfcf);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to bottom right, #8a8a8a, #cfcfcf);
+      /* Standard syntax */ }
+  #right-container .project-image {
+    max-width: 90%;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    /*&:hover {
+    	max-width: 95%;
+    }*/ }
+  #right-container .project-image-grow {
+    animation-name: grow;
+    -webkit-animation-name: grow;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear; }
+  #right-container .emphasize {
+    color: #DB8EC0; }
+  #right-container ul {
+    font-family: "Montserrat", sans-serif; }
+    #right-container ul .year {
+      color: #DB8EC0;
+      margin-right: 10px; }
+
+/*# sourceMappingURL=theme.css.map */

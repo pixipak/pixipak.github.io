@@ -2,85 +2,122 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="theme.css">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700' rel='stylesheet' type='text/css'>
-<script src="EasePack.min.js"></script>
-<script src="rAF.js"></script>
-<script src="TweenLite.min.js"></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<title>Personal Site</title>
+	<!-- import css -->
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+	<!-- import fonts -->
+	<link rel="stylesheet" href="https://i.icomoon.io/public/temp/c49e8402ef/UntitledProject/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700, 300" rel="stylesheet">
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<title>Michelle Yin</title>
 </head>
-
 <body>
-<div id="main-container">
-	<canvas id="lines"></canvas>
-	<div id="center-frame" class="wrapper">
-		<h1 id="name">Michelle Yin</h1>
-		<p id="bio">Project Manager & Developer</p>
-	</div>
-
-	<a href="#" id="scrolldown"><img src="SVG/down.png" id="downarrow"></a>
-
-	<div id="profile-container" class="container-fluid">
-		<div class="section-title">
-			<h1>Profile</h1>
+	<div class="row main-container">
+	 	<!-- left container -->
+		<div id="left-container" class="col s12 m6">
+			<div class="inner-text valign-wrapper">
+				<div class="center-align text-wrapper">
+					<img src="dessert_photo.jpg" id="picture" class="circle"/>
+					<p>Hey there I'm Michelle,</p>
+					</br>
+					<p>a freelance <span>web developer</span>,</p>
+					<p>product manager at <span>Code the Change</span></p>
+					<p>and <span>Philz coffee</span> fanatic!</p>
+					</br>
+					<a href="#" class="left-button waves-effect waves-light valign-wrapper">
+						<span class="valign">LET'S GET COFFEE!</span>
+					</a>
+					</br>
+					<div class="social-media">
+						<a href="https://www.instagram.com/michelleyinn/" target="_blank"><span class="icon-instagram"></span></a>
+						<a href="https://twitter.com/michelleyinn" target="_blank"><span class="icon-twitter2"></span>
+						</a>
+						<a href="https://www.linkedin.com/in/michelleyin96" target="_blank"><span class="icon-linkedin"></span></a>
+					</div>
+				</div>
+			</div>
 		</div>
-		<hr>
-		<div id="profile-content" class="row">
-		    <div class="col-sm-4 text-container text-container--left">
-		    	<h2>Bio</h2>
-		    	<p class="profile-desc">I'm a 20 year old developer from Palo Alto, California. I've had a passion for technology and its limitless applications since I started coding in high school. The many ways it changes peoples lives inspire me to keep learning everyday. I have a passion for building and designing web apps but I love picking up new skills as well. I love teamwork and seeing the impressive things people can accomplish when working together and am currently a project manager for <a href="http://www.ctc-usc.org/" id="ctc-link">Code the Change.</a></p>
-		    </div>
-		    <div class="col-sm-4 text-center prof-image--container">
-		    	<img src="profile.jpg" id="profile-image">
-		    </div>
-		    <div class="col-sm-4 text-container text-container--right">
-		    	<h2>About Me</h2>
-		    	<h4>Name:</h4>
-		    	<small>Michelle Yin</small>
-		    	<h4>Education:</h4>
-		    	<small>University of Southern California</small> </br>
-		    	<small>B.S. Computer Science and Business Administration</small>
-		    	<h4>Location:</h4>
-		    	<small>Los Angeles, CA</small>
-		    </div>
+		<!-- right container -->
+		<div class="col s12 m6" id="right-container">
+			<div class="row">
+				<div class="col l3 m12 s12 title left-align"><span>ABOUT ME</span></div>
+				<div class="col l9 m12 s12 desc left-align">
+					<p>Born in Palo Alto, the heart of Silicon Valley, I've had a passion for technology and its limitless applications since I started coding in high school. The many ways it changes peoples lives inspire me to keep learning everyday. I have a passion for building and designing web apps but I take every opportunity to learn new skills. I'm particularly excited about virtual reality and technology innovation in fashion and cosmetics!</p>
+					<p>I'm a junior studying <span class="emphasize">Computer Science and Business Administration</span> at the University of Southern California and am currently based in <span class="emphasize">Los Angeles</span>, CA.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l3 m12 s12 title left-align"><span>PROJECTS</span></div>
+				<div class="col l9 m12 s12 desc">
+					<div id="woke" class="project-container">
+						<div class="text-container valign-wrapper">
+							<p class="text valign">Social media network aimed at increasing college activism. Built using Java, Javascript, JSP, Bootstrap, HTML, SASS.</p>
+						</div>
+					</div>
+					<div id="lax" class="project-container">
+						<div class="text-container valign-wrapper">
+							<p class="text valign">Lacrosse website for Phenom Lacrosse and Development. Built using HTML, SASS, Javascript, MaterializeCSS. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l3 m12 s12 title left-align"><span>EXPERIENCE</span></div>
+				<div class="col l9 m12 s12 desc left-align">
+					<ul>
+						<li><span class="year">2017</span>Incoming Software Engineering Intern @ Facebook</li>
+						<li><span class="year">2016</span>Engineering Practicum Intern @ Google</li>
+						<li><span class="year">2015</span>Software Engineering Intern @ Recruiter.ai</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l3 m12 s12 title left-align"><span>SKILLS</span></div>
+				<div class="col l9 m12 s12 desc left-align">
+					<ul>
+						<li><span class="year">></span>HTML, CSS, JavaScript</li>
+						<li><span class="year">></span>Objective-C</li>
+						<li><span class="year">></span>Java</li>
+						<li><span class="year">></span>C++</li>
+						<li><span class="year">></span>Python</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
+    <!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+			$("#lax").hover(
+				function() {
+					$(this).find('.text-container').fadeIn();
+				},
+				function() {
+					$(this).find('.text-container').fadeOut();
+				});
+			$("#woke").hover(
+				function() {
+					$(this).find('.text-container').fadeIn();
+				},
+				function() {
+					$(this).find('.text-container').fadeOut();
+				});
+		});
+    </script>
 </body>
-
 </html>
-<script src="movingbackground.js"></script>
-<script>
-
-$(document).ready(function () {
-    $("ul#info li")
-        .mouseover(function() {
-            var src = $(this).children('a').find('img').attr("src").replace(/.svg/, "_hover.svg");
-            $(this).children('a').find('img').attr("src", src);
-        })
-        .mouseout(function() {
-            var src = $(this).children('a').find('img').attr("src").replace(/_hover.svg/, ".svg");
-            $(this).children('a').find('img').attr("src", src);
-        });
-});
-
-$("#scrolldown").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#profile-container").offset().top},
-        'slow');
-});
-</script>
 
 

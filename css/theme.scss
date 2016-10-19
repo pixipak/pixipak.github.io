@@ -1,0 +1,215 @@
+//Mixins
+@mixin grad-purple{
+  background: -webkit-linear-gradient(left top, #5634F6, #9869E7, #FECAD2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #5634F6, #9869E7, #FECAD2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right,#5634F6, #9869E7, #FECAD2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #5634F6, #9869E7, #FECAD2); /* Standard syntax */
+}
+
+@mixin grad-blue {
+  background: -webkit-linear-gradient(left top, #4958D7, #a4abeb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #5634F6, #a4abeb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right,#5634F6, #a4abeb); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #5634F6, #a4abeb); /* Standard syntax */
+}
+
+@mixin grad-gray{
+  background: -webkit-linear-gradient(left top, #8a8a8a, #cfcfcf); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #8a8a8a, #cfcfcf); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #8a8a8a, #cfcfcf); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #8a8a8a, #cfcfcf); /* Standard syntax */
+}
+
+
+//Animations
+@keyframes grow {
+    0% {max-width: 90%;}
+    100% {max-width: 94%;}
+}
+
+@-webkit-keyframes grow {
+	0% {max-width: 90%;}
+    100% {max-width: 94%;}
+}
+
+// Variables
+$font-hd: 'Montserrat', sans-serif;
+$font-bt: 'Raleway', sans-serif;
+$purple:  #5634F6;
+$violet: #DB8EC0;
+$pink: #FECAD2;
+
+.main-container {
+	margin-bottom: 0 !important;
+	height: 100vh;
+}
+
+#left-container {
+	height: 80vh;
+	@media only screen and (min-width: 601px) {
+		position: fixed;
+		float: left;
+		display: inline-block;
+		height: 100vh;
+	}
+
+	@include grad-purple;
+
+	.inner-text {
+		height: 100%;
+		text-align: center;
+	}
+
+	.text-wrapper {
+		margin: 0 auto;
+	}
+
+	#picture {
+		width: 170px;
+		margin-bottom: 40px;
+	}
+
+	span {
+		color: #4C34F7;
+	}
+
+	p {
+		color: white;
+		font-family: $font-hd;
+		font-size: 1.5em;
+		line-height: 15px;
+	}
+
+	.left-button {
+		font-family: $font-hd;
+		font-size: 1em;
+		font-weight: bold;
+		padding: 8px 20px;
+		background: white;
+		border-radius: 20px;
+		border: 2px solid white;
+		color: white;
+		span {
+			color: $purple;
+		}
+		&:hover  {
+			text-decoration: none;
+			background: transparent;
+			span {
+				color: white;
+			}
+		}
+	}
+	.social-media {
+		font-size: 18px;
+		margin-top: 20px;
+		a {
+			margin-right: 5px;
+			color: $purple;
+			&:hover, &:focus {
+				text-decoration: none;
+				span {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+#right-container {
+	float: right;
+	span {
+		font-family: $font-hd;
+		font-size: 1em;
+		color: $purple;
+	}
+
+	.title, .desc {
+		height: 100%;
+		margin-top: 50px;
+	}
+
+	.title {
+		padding-left: 50px;
+	}
+
+	.desc {
+		padding-right: 50px;
+		@media only screen and (max-width: 990px) {
+			padding-left: 50px;
+		}
+	}
+
+	p {
+		font-family: $font-bt;
+		font-size: 1em;
+	}
+
+	.project-container {
+		position: relative;
+		background-size: cover;
+		background-position: center;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		width: 90%;
+		height: 275px;
+		.text-container {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: left;
+			padding: 100px 50px;
+			display: none;
+			border-radius: 10px;
+			p {
+				font-family: $font-hd;
+				color: white;
+			}
+		}
+	}
+
+	#lax {
+		background-image: url(../laxsite.png);
+		.text-container {
+			@include grad-blue;
+		}
+	}
+
+	#woke {
+		background-image: url(../woke.png);
+		background-position: center;
+		.text-container {
+			@include grad-gray;
+		}
+	}
+
+	.project-image {
+		max-width: 90%;
+		border-radius: 12px;
+		margin-bottom: 30px;
+		/*&:hover {
+			max-width: 95%;
+		}*/
+	}
+
+	.project-image-grow {
+		animation-name: grow;
+		-webkit-animation-name: grow;
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+		animation-timing-function: linear;
+		-webkit-animation-timing-function: linear;
+	}
+
+	.emphasize {
+		color: $violet;
+	}
+
+	ul {
+		font-family: $font-hd;
+		.year {
+			color: $violet;
+			margin-right: 10px;
+		}
+	}
+}
