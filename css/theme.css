@@ -1,3 +1,48 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?8h3zl5");
+  src: url("fonts/icomoon.eot?8h3zl5#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?8h3zl5") format("truetype"), url("fonts/icomoon.woff?8h3zl5") format("woff"), url("fonts/icomoon.svg?8h3zl5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-facebook2:before {
+  content: "\ea8d"; }
+
+.icon-instagram:before {
+  content: "\ea90"; }
+
+.icon-twitter2:before {
+  content: "\ea92"; }
+
+.icon-linkedin:before {
+  content: "\eac8"; }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
 @keyframes grow {
   0% {
     max-width: 90%; }
