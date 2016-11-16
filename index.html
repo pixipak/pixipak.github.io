@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 	<!-- import css -->
 	<link rel="stylesheet" type="text/css" href="css/theme.css">
-	<!-- import fonts -->
-	<link rel="stylesheet" href="https://i.icomoon.io/public/temp/c49e8402ef/UntitledProject/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700, 300" rel="stylesheet">
 	<!--Import Google Icon Font-->
@@ -25,18 +23,18 @@
 <body>
 	<div class="row main-container">
 	 	<!-- left container -->
-		<div id="left-container" class="col s12 m6">
+		<div id="left-container" class="col s12 m6 fadeInLeft">
 			<div class="inner-text valign-wrapper">
 				<div class="center-align text-wrapper">
 					<img src="dessert_photo.jpg" id="picture" class="circle"/>
-					<p>Hey there I'm Michelle,</p>
+					<p id="name">Hey I'm Michelle,</p>
 					</br>
-					<p>a freelance <span>web developer</span>,</p>
-					<p>product manager at <span>Code the Change</span></p>
-					<p>and <span>Philz coffee</span> fanatic!</p>
+					<p class="desc">full stack<span> developer,</span></p>
+					<p class="desc">and <span>tech entrepreneur,</span></p>
+					<p class="desc">currently based in <span>Los Angeles.</span> </p>
 					</br>
-					<a href="#" class="left-button waves-effect waves-light valign-wrapper">
-						<span class="valign">LET'S GET COFFEE!</span>
+					<a href="mailto:yinm@usc.edu" rel="external" class="left-button waves-effect waves-light valign-wrapper">
+						<span class="valign">LET'S GRAB COFFEE</span>
 					</a>
 					</br>
 					<div class="social-media">
@@ -53,33 +51,7 @@
 			<div class="row">
 				<div class="col l3 m12 s12 title left-align"><span>ABOUT ME</span></div>
 				<div class="col l9 m12 s12 desc left-align">
-					<p>Born in Palo Alto, the heart of Silicon Valley, I've had a passion for technology and its limitless applications since I started coding in high school. The many ways it changes peoples lives inspire me to keep learning everyday. I have a passion for building and designing web apps but I take every opportunity to learn new skills. I'm particularly excited about virtual reality and technology innovation in fashion and cosmetics!</p>
-					<p>I'm a junior studying <span class="emphasize">Computer Science and Business Administration</span> at the University of Southern California and am currently based in <span class="emphasize">Los Angeles</span>, CA.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col l3 m12 s12 title left-align"><span>PROJECTS</span></div>
-				<div class="col l9 m12 s12 desc">
-					<div id="woke" class="project-container">
-						<div class="text-container valign-wrapper">
-							<p class="text valign">Social media network aimed at increasing college activism. Built using Java, Javascript, JSP, Bootstrap, HTML, SASS.</p>
-						</div>
-					</div>
-					<div id="lax" class="project-container">
-						<div class="text-container valign-wrapper">
-							<p class="text valign">Lacrosse website for Phenom Lacrosse and Development. Built using HTML, SASS, Javascript, MaterializeCSS. </p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col l3 m12 s12 title left-align"><span>EXPERIENCE</span></div>
-				<div class="col l9 m12 s12 desc left-align">
-					<ul>
-						<li><span class="year">2017</span>Incoming Software Engineering Intern @ Facebook</li>
-						<li><span class="year">2016</span>Engineering Practicum Intern @ Google</li>
-						<li><span class="year">2015</span>Software Engineering Intern @ Recruiter.ai</li>
-					</ul>
+					<p>I'm a 20 year old developer, product manager and entrepreneur from Palo Alto. I've had a passion for technology and its limitless applications since I started coding in high school. I love designing and building web apps but I take every opportunity to learn new skills! Particularly excited about changing the world we live in through technology. And I'm currently a junior studying Computer Science and Business Administration at the University of Southern California.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -94,14 +66,55 @@
 					</ul>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col l3 m12 s12 title left-align"><span>PROJECTS</span></div>
+				<div class="col l9 m12 s12 desc left-align">
+					<a href="http://www.phenomld.com">
+						<div id="lax" class="hvr-shrink project-container">
+							<div class="text-container valign-wrapper">
+								<p class="text valign">Designed and Developed a website for a lacrosse development camp based out of Palo Alto.</p>
+							</div>
+						</div>
+					</a>
+					<div id="woke" class="hvr-shrink project-container">
+						<div class="text-container valign-wrapper">
+							<p class="text valign">Created a social media platform aimed at congregating activist data and connecting unheard voices. Built using Java, Javascript, JSP, Bootstrap, HTML, SASS.</p>
+						</div>
+					</div>
+					<div id="chrysalis" class="hvr-shrink project-container">
+						<div class="text-container valign-wrapper">
+							<p class="text valign">As a developer and product manager for Code the Change, built and led a web based software product for our client Chrysalis. This internal tool helps them connects formerly homeless individuals with employment in LA.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l3 m12 s12 title left-align"><span>EXPERIENCE</span></div>
+				<div class="col l9 m12 s12 desc left-align">
+					<ul>
+						<li><span class="year">2017</span>Facebook, Incoming Software Engineering Intern</li>
+						<li><span class="year">2016</span>Google,  Engineering Practicum Intern</li>
+						<li><span class="year">2015</span>Iconist, Co-founder</li>
+						<li><span class="year">2015</span>Recruiter.ai, Software Engineering Intern</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
     <!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/animate.js"></script>
     <script>
     	$(document).ready(function(){
 			$("#lax").hover(
+				function() {
+					$(this).find('.text-container').fadeIn();
+				},
+				function() {
+					$(this).find('.text-container').fadeOut();
+				});
+			$("#chrysalis").hover(
 				function() {
 					$(this).find('.text-container').fadeIn();
 				},
