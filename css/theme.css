@@ -102,6 +102,11 @@ input, .btn, .form-control {
     border: none;
     display: inline-block;
     position: relative; }
+    @media (max-width: 500px) {
+      .landing-container .form-group .email {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 6px 12px; } }
   .landing-container .form-group .submit {
     display: inline-block;
     background-color: #C5B3DC;
