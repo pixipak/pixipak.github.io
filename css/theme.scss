@@ -36,11 +36,13 @@ $purple: #C262A6; //(194,98,166)
 
 h1, h2, h3, h4, h5, h6, input {
 	font-family: 'Montserrat', sans-serif;
+	color: white;
 }
 
 p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
+	color: white;
 }
 
 input, .btn, .form-control {
@@ -185,19 +187,23 @@ input, .btn, .form-control {
 }
 
 .vision-container {
-	min-height: 80vh;
+	min-height: 90vh;
 	//background: linear-gradient(white, $lt-pink);
 	//background: white;
 }
 
 .hydration-container {
-	min-height: 80vh;
+	min-height: 90vh;
 	//background: linear-gradient($lt-pink, white);
 	//background: $blue;
 }
 
 .charge-container {
-	min-height: 80vh;
+	min-height: 90vh;
+	color: $blue;
+	p, h2 {
+		color: $blue;
+	}
 	//background: linear-gradient(white, $lt-purple);
 	//background: $lt-purple;
 }

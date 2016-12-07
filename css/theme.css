@@ -19,11 +19,13 @@
   font-family: logo;
   src: url(../Quicksand_Bold.otf); }
 h1, h2, h3, h4, h5, h6, input {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  color: white; }
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  color: white; }
 
 input, .btn, .form-control {
   border-radius: 0px;
@@ -129,13 +131,16 @@ input, .btn, .form-control {
   width: 500px; }
 
 .vision-container {
-  min-height: 80vh; }
+  min-height: 90vh; }
 
 .hydration-container {
-  min-height: 80vh; }
+  min-height: 90vh; }
 
 .charge-container {
-  min-height: 80vh; }
+  min-height: 90vh;
+  color: #2A3070; }
+  .charge-container p, .charge-container h2 {
+    color: #2A3070; }
 
 .icon-container {
   text-align: center;
